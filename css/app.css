@@ -1,0 +1,206 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  position: relative;
+}
+
+.navbar-container {
+  width: 100%;
+  padding: 1rem 5rem 1rem 5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.navbar-container .nav-list ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-container .nav-list li:hover a {
+  background-color: #FFE3E1;
+  color: white;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+aside {
+  display: flex;
+  flex: 1;
+  padding-left: 7rem;
+}
+
+aside img {
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+  margin: auto;
+  border-radius: 100%;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+#home-section {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  margin-block: 1rem;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+#home-section button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  background-color: #FFD1D1;
+
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+#home-section button a{
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+#home-section button:hover {
+  border: 3px solid #FFD1D1;
+  background-color: transparent;
+}
+
+#home-section button a:hover {
+  color: #FFD1D1;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 25px 25px 25px;
+}
+
+#about .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#about .about-text pre {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#about .skills p{
+  padding-top: 1rem;
+  font-weight: 600;
+}
+
+#about .skill-item h5 {
+  padding-top: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#about .progress {
+  background-color: #f0f0f0;
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#about .progress-bar {
+  background-color: #FFD1D1;
+  height: 100%;
+  border-radius: 5px;
+}
+
+#about .skill-percent {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #FFE3E1;
+}
+
+pre {
+  font-family: 'Quicksand', sans-serif;
+  padding: 1rem;
+}
+
+.social-links li {
+  list-style-type: none;
+}
+
+.social-links li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-links li a:hover {
+  text-decoration: underline;
+}
